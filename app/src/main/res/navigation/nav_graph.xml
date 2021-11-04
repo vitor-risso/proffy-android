@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/OnBoardingFragment">
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.example.androiproffy.ui.Splash.SplashScreenFragment"
+        android:label="@string/splash_fragment_label"
+        tools:layout="@layout/fragment_splash_screen">
+        <action
+            android:id="@+id/Splash_to_onBoarding"
+            app:destination="@+id/OnBoardingFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/OnBoardingFragment"
+        android:name="com.example.androiproffy.ui.OnBoardingFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_on_boarding">
+
+
+    </fragment>
+
+</navigation>
