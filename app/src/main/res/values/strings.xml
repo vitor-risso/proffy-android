@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">androiproffy</string>
+    <string name="app_name">Proffy</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="on_boarding_fragment_label">On Boarding Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>
