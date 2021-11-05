@@ -3,6 +3,7 @@
     <string name="title_activity_main">MainActivity</string>
     <!-- Strings used for fragments for navigation -->
     <string name="on_boarding_fragment_label">On Boarding Fragment</string>
+
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
