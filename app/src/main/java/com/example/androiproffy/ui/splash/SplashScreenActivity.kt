@@ -1,11 +1,11 @@
-package com.example.androiproffy.ui.Splash
+package com.example.androiproffy.ui.splash
 
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.androiproffy.R
-import com.example.androiproffy.ui.Main.MainActivity
+import com.example.androiproffy.ui.main.MainActivity
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
