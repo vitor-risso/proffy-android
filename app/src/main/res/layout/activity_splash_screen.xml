@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple"
-    tools:context=".ui.Splash.SplashScreenActivity">
+    tools:context=".ui.splash.SplashScreenActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="wrap_content"
