@@ -1,6 +1,7 @@
 package com.example.androiproffy.ui.Main
 
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.ui.AppBarConfiguration
 import com.example.androiproffy.R
@@ -13,7 +14,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_on_boarding)
+        setContentView(R.layout.fragment_first_on_boarding)
+        Log.d("VITOR", "CHEGOU")
     }
 
 }
