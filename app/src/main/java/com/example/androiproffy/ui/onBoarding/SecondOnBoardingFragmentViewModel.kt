@@ -1,4 +1,4 @@
-package com.example.androiproffy.ui.OnBoarding
+package com.example.androiproffy.ui.onBoarding
 
 import androidx.lifecycle.ViewModel
 

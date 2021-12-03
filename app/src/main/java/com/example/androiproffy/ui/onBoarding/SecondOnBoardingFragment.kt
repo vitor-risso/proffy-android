@@ -1,4 +1,4 @@
-package com.example.androiproffy.ui.OnBoarding
+package com.example.androiproffy.ui.onBoarding
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.androiproffy.R
 import com.example.androiproffy.databinding.FragmentSecondOnBoardingBinding
 
 class SecondOnBoardingFragment : Fragment() {
