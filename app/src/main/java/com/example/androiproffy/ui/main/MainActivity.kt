@@ -7,6 +7,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import com.example.androiproffy.R
 import com.example.androiproffy.databinding.ActivityMainBinding
 
+// É necessário configurar o View Pager para que cê consiga acessar as outras Fragments
 class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
