@@ -1,65 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.onBoarding.SecondOnBoardingFragment">
+    <data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/internConstraint"
+        <variable
+            name="viewModel"
+            type="com.example.androiproffy.ui.onBoarding.SecondOnBoardingFragmentViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+
         android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:background="@color/green"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent"
+        tools:context=".ui.onBoarding.SecondOnBoardingFragment">
 
-        <androidx.appcompat.widget.AppCompatImageView
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/internConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@color/green"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/estudar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/estudar"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="96dp"
+            android:fontFamily="@font/archivo_narrow"
+            android:text="@string/_02"
+            android:textColor="@color/textBase"
+            android:textFontWeight="500"
+            android:textSize="40sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/internConstraint" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/description"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="@string/teacher_explanin"
+            android:textFontWeight="500"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@id/one"
+            app:layout_constraintTop_toBottomOf="@id/one" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="98dp"
+            android:onClickListener="@{()-> viewModel.navigateToNextScreen()}"
+            android:background="@drawable/ic_arrow"
+            android:contentDescription="@string/button_description"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/description" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/one"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="96dp"
-        android:fontFamily="@font/archivo_narrow"
-        android:text="@string/_02"
-        android:textColor="@color/textBase"
-        android:textFontWeight="500"
-        android:textSize="40sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/internConstraint" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="206dp"
-        android:id="@+id/description"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins"
-        android:text="@string/teacher_explanin"
-        android:textFontWeight="500"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@id/one"
-        app:layout_constraintTop_toBottomOf="@id/one" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnArrow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:background="@drawable/ic_arrow"
-        android:contentDescription="@string/button_description"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="98dp"
-        app:layout_constraintTop_toBottomOf="@id/description" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

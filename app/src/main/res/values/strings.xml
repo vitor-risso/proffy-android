@@ -17,4 +17,8 @@
     <string name="_02">02</string>
     <string name="teacher_explanin">Ou dê aulas sobre o que você mais conhece</string>
     <string name="button_description">navigate to next screen button</string>
+    <string name="title_activity_on_boarding">OnBoardingActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
 </resources>

@@ -13,7 +13,6 @@ class OnBoardingActivity : AppCompatActivity() {
 
         binding = ActivityOnBoardingBinding.inflate(layoutInflater)
         binding.viewPager.adapter = ViewPagerAdapter(supportFragmentManager, lifecycle)
-
         binding.indicator.setViewPager(binding.viewPager)
         setContentView(binding.root)
     }

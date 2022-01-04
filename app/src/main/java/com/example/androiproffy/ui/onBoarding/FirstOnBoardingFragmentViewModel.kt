@@ -7,11 +7,10 @@ import androidx.lifecycle.ViewModel
 
 class FirstOnBoardingFragmentViewModel() : ViewModel() {
 
-    private lateinit var _shouldNavigateToNextScreen: MutableLiveData<Boolean>
+    private var _shouldNavigateToNextScreen = MutableLiveData<Boolean>(false)
     val shouldNavigateToNextScreen: LiveData<Boolean> get() = _shouldNavigateToNextScreen
 
     fun navigateToNextScreen(): Unit {
         _shouldNavigateToNextScreen.postValue(true)
-        Log.d("VITOR", "navigate")
     }
 }

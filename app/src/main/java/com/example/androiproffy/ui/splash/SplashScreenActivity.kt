@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.androiproffy.R
 import com.example.androiproffy.ui.main.MainActivity
+import com.example.androiproffy.ui.onBoarding.OnBoardingActivity
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -19,7 +20,7 @@ class SplashScreenActivity : AppCompatActivity() {
 
         GlobalScope.launch {
             delay(2000L)
-            startActivity(Intent(this@SplashScreenActivity, MainActivity::class.java))
+            startActivity(Intent(this@SplashScreenActivity, OnBoardingActivity::class.java))
             finish()
         }
     }

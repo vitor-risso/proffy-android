@@ -31,10 +31,18 @@ class SecondOnBoardingFragment : Fragment() {
             ).apply {
                 viewModel = this@SecondOnBoardingFragment.viewModel
                 lifecycleOwner = viewLifecycleOwner
+            }.also {
+                setObservers()
             }
-        binding.btnArrow.setOnClickListener {
-            startActivity(Intent(context, MainActivity::class.java))
-        }
         return binding.root
+    }
+
+    private fun setObservers() {
+        viewModel.shouldNavigateToNextScreen.observe(viewLifecycleOwner) {
+            if (it) {
+                startActivity(Intent(context, MainActivity::class.java))
+                activity?.finish()
+            }
+        }
     }
 }

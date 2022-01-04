@@ -7,9 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import com.example.androiproffy.R
 import com.example.androiproffy.databinding.FragmentFirstOnBoardingBinding
+import com.google.android.material.behavior.SwipeDismissBehavior
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class FirstOnBoardingFragment : Fragment() {
@@ -40,8 +42,7 @@ class FirstOnBoardingFragment : Fragment() {
     private fun setObservers(): Unit {
         viewModel.shouldNavigateToNextScreen.observe(viewLifecycleOwner) {
             if (it) {
-                findNavController().navigate(R.id.navigateToSecondOnBoarding)
-                Log.d("VITOR", "CHEGOU")
+                
             }
         }
     }
