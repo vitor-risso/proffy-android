@@ -21,4 +21,11 @@
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
+    <string name="what_wanna_do"><b>O que deseja fazer?</b></string>
+    <string name="welcome">Seja bem-vindo.</string>
+    <string name="study">Estudar</string>
+    <string name="give_classes">Dar aulas</string>
+    <string name="wanna_be_proffy">Quer ser um Proffy\?</string>
+    <string name="first_step">Para começar, você precisa se cadastrar como professor na nossa plataforma web.</string>
+    <string name="all_rigth">Tudo Bem</string>
 </resources>
