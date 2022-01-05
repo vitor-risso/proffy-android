@@ -11,6 +11,29 @@
         android:label="Home Fragment"
         tools:layout="@layout/fragment_home">
 
+        <action
+            android:id="@+id/navigateFromHomeToStudy"
+            app:destination="@id/studyFragment" />
+        <action
+            android:id="@+id/navigateFromHomeToGiveClasses"
+            app:destination="@id/giveClassesFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/studyFragment"
+        android:name="com.example.androiproffy.ui.study.StudyFragment"
+        android:label="Study Fragment"
+        tools:layout="@layout/fragment_study" />
+
+    <fragment
+        android:id="@+id/giveClassesFragment"
+        android:name="com.example.androiproffy.ui.giveclasses.GiveClassesFragment"
+        tools:labels="Give ClassesFragment"
+        tools:layout="@layout/fragment_give_classes">
+        <action
+            android:id="@+id/navigateFromGiveClassesToHome"
+            app:destination="@id/homeFragment" />
     </fragment>
 
 
