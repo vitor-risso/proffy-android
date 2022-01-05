@@ -14,15 +14,16 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class SecondOnBoardingFragment : Fragment() {
 
-    private val viewModel: SecondOnBoardingFragmentViewModel by viewModel()
+    private var _binding: FragmentSecondOnBoardingBinding? = null
+    private val binding get() = _binding!!
 
-    private lateinit var binding: FragmentSecondOnBoardingBinding
+    private val viewModel: SecondOnBoardingFragmentViewModel by viewModel()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding =
+        _binding =
             DataBindingUtil.inflate<FragmentSecondOnBoardingBinding>(
                 inflater,
                 R.layout.fragment_second_on_boarding,
@@ -34,6 +35,7 @@ class SecondOnBoardingFragment : Fragment() {
             }.also {
                 setObservers()
             }
+
         return binding.root
     }
 

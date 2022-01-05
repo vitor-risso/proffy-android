@@ -1,22 +1,19 @@
 package com.example.androiproffy.ui.onBoarding
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.fragment.findNavController
 import com.example.androiproffy.R
 import com.example.androiproffy.databinding.FragmentFirstOnBoardingBinding
-import com.google.android.material.behavior.SwipeDismissBehavior
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class FirstOnBoardingFragment : Fragment() {
 
-    private lateinit var binding: FragmentFirstOnBoardingBinding
+    private var _binding: FragmentFirstOnBoardingBinding? = null
+    private val binding get() = _binding!!
 
     private val viewModel: FirstOnBoardingFragmentViewModel by viewModel<FirstOnBoardingFragmentViewModel>()
 
@@ -25,7 +22,7 @@ class FirstOnBoardingFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding =
+        _binding =
             DataBindingUtil.inflate<FragmentFirstOnBoardingBinding>(
                 inflater,
                 R.layout.fragment_first_on_boarding,
@@ -39,10 +36,15 @@ class FirstOnBoardingFragment : Fragment() {
         return binding.root
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
+    }
+
     private fun setObservers(): Unit {
         viewModel.shouldNavigateToNextScreen.observe(viewLifecycleOwner) {
             if (it) {
-                
+
             }
         }
     }
