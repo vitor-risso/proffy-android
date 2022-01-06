@@ -6,14 +6,28 @@ import com.example.androiproffy.databinding.ActivityOnBoardingBinding
 
 class OnBoardingActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityOnBoardingBinding
+    private var _binding: ActivityOnBoardingBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityOnBoardingBinding.inflate(layoutInflater)
-        binding.viewPager.adapter = ViewPagerAdapter(supportFragmentManager, lifecycle)
+        _binding = ActivityOnBoardingBinding.inflate(layoutInflater)
+
+        val screens =
+            arrayListOf(
+                FirstOnBoardingFragment(binding.viewPager), SecondOnBoardingFragment()
+            )
+
+        binding.viewPager.adapter = ViewPagerAdapter(supportFragmentManager, lifecycle, screens)
+
         binding.indicator.setViewPager(binding.viewPager)
+
         setContentView(binding.root)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 }
