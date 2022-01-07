@@ -1,12 +1,12 @@
-package com.example.androiproffy.ui.main
+package com.example.androidproffy.presentation.ui.main
 
 import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
-import com.example.androiproffy.R
-import com.example.androiproffy.databinding.ActivityMainBinding
+import com.example.androidproffy.presentation.R
+import com.example.androidproffy.presentation.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

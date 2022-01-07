@@ -1,4 +1,4 @@
-package com.example.androiproffy.ui.study
+package com.example.androidproffy.presentation.ui.study
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import com.example.androiproffy.R
-import com.example.androiproffy.databinding.FragmentStudyBinding
+import com.example.androidproffy.presentation.R
+import com.example.androidproffy.presentation.databinding.FragmentStudyBinding
 
 class StudyFragment : Fragment() {
     private var _binding: FragmentStudyBinding? = null

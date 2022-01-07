@@ -1,8 +1,8 @@
-package com.example.androiproffy.ui.onBoarding
+package com.example.androidproffy.presentation.ui.onBoarding
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.androiproffy.databinding.ActivityOnBoardingBinding
+import com.example.androidproffy.presentation.databinding.ActivityOnBoardingBinding
 
 class OnBoardingActivity : AppCompatActivity() {
 

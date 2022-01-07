@@ -1,4 +1,4 @@
-package com.example.androiproffy.ui.onBoarding
+package com.example.androidproffy.presentation.ui.onBoarding
 
 import android.util.Log
 import androidx.lifecycle.LiveData

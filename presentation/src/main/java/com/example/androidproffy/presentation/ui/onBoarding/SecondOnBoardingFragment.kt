@@ -1,4 +1,4 @@
-package com.example.androiproffy.ui.onBoarding
+package com.example.androidproffy.presentation.ui.onBoarding
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,10 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentActivity
-import com.example.androiproffy.R
-import com.example.androiproffy.databinding.FragmentSecondOnBoardingBinding
-import com.example.androiproffy.ui.main.MainActivity
+import com.example.androidproffy.presentation.R
+import com.example.androidproffy.presentation.databinding.FragmentSecondOnBoardingBinding
+import com.example.androidproffy.presentation.ui.main.MainActivity
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class SecondOnBoardingFragment : Fragment() {
@@ -40,7 +39,6 @@ class SecondOnBoardingFragment : Fragment() {
         return binding.root
     }
 
-    
     private fun setObservers() {
         viewModel.shouldNavigateToNextScreen.observe(viewLifecycleOwner) {
             if (it) {

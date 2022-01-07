@@ -1,4 +1,4 @@
-package com.example.androiproffy.ui.home
+package com.example.androidproffy.presentation.ui.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.androiproffy.R
-import com.example.androiproffy.databinding.FragmentHomeBinding
+import com.example.androidproffy.presentation.R
+import com.example.androidproffy.presentation.databinding.FragmentHomeBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class HomeFragment : Fragment() {

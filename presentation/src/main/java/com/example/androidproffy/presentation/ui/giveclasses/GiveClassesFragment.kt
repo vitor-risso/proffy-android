@@ -1,4 +1,4 @@
-package com.example.androiproffy.ui.giveclasses
+package com.example.androidproffy.presentation.ui.giveclasses
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,10 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 import androidx.navigation.fragment.findNavController
-import com.example.androiproffy.R
-import com.example.androiproffy.databinding.FragmentGiveClassesBinding
+import com.example.androidproffy.presentation.R
+import com.example.androidproffy.presentation.databinding.FragmentGiveClassesBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class GiveClassesFragment : Fragment() {

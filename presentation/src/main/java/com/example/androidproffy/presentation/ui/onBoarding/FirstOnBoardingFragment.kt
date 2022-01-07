@@ -1,4 +1,4 @@
-package com.example.androiproffy.ui.onBoarding
+package com.example.androidproffy.presentation.ui.onBoarding
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
-import com.example.androiproffy.R
-import com.example.androiproffy.databinding.FragmentFirstOnBoardingBinding
+import com.example.androidproffy.presentation.R
+import com.example.androidproffy.presentation.databinding.FragmentFirstOnBoardingBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class FirstOnBoardingFragment(private val view: ViewPager2) : Fragment() {

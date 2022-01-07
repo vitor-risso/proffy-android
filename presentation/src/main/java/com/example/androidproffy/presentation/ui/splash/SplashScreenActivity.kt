@@ -1,12 +1,11 @@
-package com.example.androiproffy.ui.splash
+package com.example.androidproffy.presentation.ui.splash
 
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.androiproffy.R
-import com.example.androiproffy.ui.main.MainActivity
-import com.example.androiproffy.ui.onBoarding.OnBoardingActivity
+import com.example.androidproffy.presentation.R
+import com.example.androidproffy.presentation.ui.onBoarding.OnBoardingActivity
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -19,9 +18,13 @@ class SplashScreenActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash_screen)
 
         GlobalScope.launch {
-            delay(2000L)
+            delay(DELAY)
             startActivity(Intent(this@SplashScreenActivity, OnBoardingActivity::class.java))
             finish()
         }
+    }
+
+    companion object {
+        private const val DELAY = 2000L
     }
 }

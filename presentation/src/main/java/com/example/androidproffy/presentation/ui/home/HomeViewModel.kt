@@ -1,4 +1,4 @@
-package com.example.androiproffy.ui.home
+package com.example.androidproffy.presentation.ui.home
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
