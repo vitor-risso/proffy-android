@@ -8,4 +8,8 @@ dependencyResolutionManagement {
 }
 rootProject.name = "androiproffy"
 include ':app'
-//include ':buildsrc'
+include ':infrastructure'
+include ':presentation'
+include ':insfrastructure'
+include ':application'
+include ':domain'
