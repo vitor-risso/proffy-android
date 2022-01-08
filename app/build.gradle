@@ -8,7 +8,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.example.androiproffy"
+        applicationId "com.example.androidproffy"
         minSdk 28
         targetSdk 31
         versionCode 1
@@ -36,6 +36,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
 
 }
 
@@ -58,24 +62,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
-    // Coroutines - used to do the requests to the API on another thread to avoid the UI freezing.
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1'
-
-    // Retrofit - used to to the HTTP requests and get the responses.
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    implementation "com.squareup.retrofit2:converter-moshi:2.9.0" // used to integrate with Moshi.
-
-    // Moshi - used to parse the received JSONs to local objects.
-    implementation "com.squareup.moshi:moshi:1.11.0"
-    kapt "com.squareup.moshi:moshi-kotlin-codegen:1.9.3" // used to work with kotlin projects.
-
     // Koin
     implementation "io.insert-koin:koin-android:3.1.4"
-
-    // ViewPager2
-    implementation "com.google.android.material:material:1.6.0-alpha01"
-
-    // Indicators
-    implementation 'me.relex:circleindicator:2.1.6'
 }

@@ -6,10 +6,9 @@ dependencyResolutionManagement {
         jcenter() // Warning: this repository is going to shut down soon
     }
 }
-rootProject.name = "androiproffy"
-include ':app'
-include ':infrastructure'
+rootProject.name = "androidproffy"
 include ':presentation'
-include ':insfrastructure'
+include ':app'
 include ':application'
 include ':domain'
+include ':infrastructure'

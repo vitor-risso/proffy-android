@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="HomeFragment"
+        android:name="com.example.androidproffy.presentation.ui.home.HomeFragment"
         android:label="Home Fragment"
         tools:layout="@layout/fragment_home">
 
@@ -22,13 +22,13 @@
 
     <fragment
         android:id="@+id/studyFragment"
-        android:name="StudyFragment"
+        android:name="com.example.androidproffy.presentation.ui.study.StudyFragment"
         android:label="Study Fragment"
         tools:layout="@layout/fragment_study" />
 
     <fragment
         android:id="@+id/giveClassesFragment"
-        android:name="GiveClassesFragment"
+        android:name="com.example.androidproffy.presentation.ui.giveclasses.GiveClassesFragment"
         tools:labels="Give ClassesFragment"
         tools:layout="@layout/fragment_give_classes">
         <action
