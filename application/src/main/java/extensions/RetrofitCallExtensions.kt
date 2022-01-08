@@ -15,9 +15,12 @@ suspend fun <T> Call<T>.toRequestResult(): RequestResult<T> {
         RequestResultSuccess(response)
     } else {
         when (response.code()) {
-            401 -> RequestResultUnauthorized()
-            404 -> RequestResultNotFound()
+            UNAUTHORIZED_CODE -> RequestResultUnauthorized()
+            ERROR_CODE -> RequestResultNotFound()
             else -> RequestResultError(response.code().toString() + ": " + response.message())
         }
     }
 }
+
+const val ERROR_CODE = 404
+const val UNAUTHORIZED_CODE = 401

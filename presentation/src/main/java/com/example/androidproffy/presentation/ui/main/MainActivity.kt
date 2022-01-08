@@ -1,6 +1,5 @@
 package com.example.androidproffy.presentation.ui.main
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil

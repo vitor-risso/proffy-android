@@ -8,7 +8,6 @@ import service.teacher.TeacherService
 class UserUseCaseImpl(private val teacherService: TeacherService) : UserUseCase {
 
     override suspend fun getUser(name: String): TeacherModel {
-        var teacherModel: TeacherModel? = null
         when (val result = teacherService.getUserInfo(name).toRequestResult()) {
             is RequestResultSuccess -> {
                 result.data.body()?.let {
