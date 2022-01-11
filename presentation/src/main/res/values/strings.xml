@@ -28,4 +28,6 @@
     <string name="wanna_be_proffy">Quer ser um Proffy\?</string>
     <string name="first_step">Para começar, você precisa se cadastrar como professor na nossa plataforma web.</string>
     <string name="all_rigth">Tudo Bem</string>
+    <string name="available_proffy">Proffys \nDisponíveis</string>
+    <string name="hour_price">Preço/hora</string>
 </resources>

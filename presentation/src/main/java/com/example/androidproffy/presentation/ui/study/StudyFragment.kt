@@ -26,6 +26,7 @@ class StudyFragment : Fragment() {
         ).apply {
             lifecycleOwner = this@StudyFragment.viewLifecycleOwner
         }
+        binding.rvTeacher.adapter = StudyRecyclerViewAdapter()
         return binding.root
     }
 
