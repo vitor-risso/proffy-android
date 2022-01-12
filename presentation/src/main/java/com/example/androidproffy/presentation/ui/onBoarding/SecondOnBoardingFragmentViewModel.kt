@@ -9,7 +9,7 @@ class SecondOnBoardingFragmentViewModel : ViewModel() {
     private var _shouldNavigateToNextScreen = MutableLiveData<Boolean>(false)
     val shouldNavigateToNextScreen: LiveData<Boolean> get() = _shouldNavigateToNextScreen
 
-    fun navigateToNextScreen(): Unit {
+    fun navigateToNextScreen() {
         _shouldNavigateToNextScreen.postValue(true)
         Log.d("VITOR", "navigate")
     }

@@ -19,7 +19,8 @@ class GiveClassesFragment : Fragment() {
     private val viewModel: GiveClassesViewModel by viewModel()
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         _binding = DataBindingUtil.inflate<FragmentGiveClassesBinding>(

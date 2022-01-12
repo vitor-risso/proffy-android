@@ -42,7 +42,7 @@ class FirstOnBoardingFragment(private val view: ViewPager2) : Fragment() {
         _binding = null
     }
 
-    private fun setObservers(): Unit {
+    private fun setObservers() {
         viewModel.shouldNavigateToNextScreen.observe(viewLifecycleOwner) {
             if (it) {
                 view.currentItem = view.currentItem + 1
